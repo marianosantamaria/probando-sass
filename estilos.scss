@@ -1,0 +1,44 @@
+
+//comentar q no existen css con //
+//comentario q solo uso para Sass
+
+/*comentario q SI se compilan*/
+
+@import "footer";
+
+//creamos variables en Saas
+
+$celeste: skyblue;
+$rojo:red;
+$patito:yellow;
+
+
+body{
+    background-color: $celeste;
+}
+.nav{
+
+    display: flex;
+    list-style: none;
+    padding:0;
+   
+    &-item{
+        flex-grow: 1;
+
+        &_link{
+            display: block;
+            background-color: tomato;
+            color: yellow;
+            text-align: center;
+            padding: 8px 0;
+            text-decoration: none;
+
+            
+            &:hover {
+                background-color: chocolate;
+            }
+        }
+
+    }
+
+}
